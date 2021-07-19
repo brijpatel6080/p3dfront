@@ -9,6 +9,7 @@ import customizerReducer from './customizerReducer';
 import todoReducer from './todoReducer';
 import authReducer from './authReducer';
 import pokemonReducer from './pokemonReducer';
+// import user from './userReducer';
 
 export {
   themeReducer,
@@ -22,4 +23,5 @@ export {
   todoReducer,
   authReducer,
   pokemonReducer,
+  // user,
 };

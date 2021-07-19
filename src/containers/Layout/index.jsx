@@ -112,7 +112,7 @@ const Layout = ({
         changeBlocksShadowsOff={changeBlocksShadowsOff}
       />
       { /* TODO: Delete below when building an archive */ }
-      <BuyNowButton />
+      {/* <BuyNowButton /> */}
       {customizer.topNavigation
         ? (
           <TopbarWithNavigation

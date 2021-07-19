@@ -2,7 +2,6 @@
   "name": "easydev",
   "version": "3.6.0",
   "private": true,
-  "homepage": "https://previews.aspirity.com/easydev",
   "scripts": {
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
@@ -83,13 +82,20 @@
     "yup": "^0.32.9"
   },
   "devDependencies": {
+    "eslint": "^7.29.0",
+    "prettier": "^2.3.1",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-sonarjs": "^0.9.1",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-prettier": "^3.1.2",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-import-resolver-alias": "^1.1.2",
     "eslint-import-resolver-node": "^0.3.4",
-    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-react-hooks": "^4.2.0",
     "react-app-rewired": "^2.1.8"
   },

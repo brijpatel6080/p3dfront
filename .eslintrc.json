@@ -1,0 +1,28 @@
+{
+  "env": {
+    "es6": true
+  },
+  "extends": ["airbnb", "prettier", "plugin:sonarjs/recommended" ],
+  "plugins": [
+    "sonarjs",
+    "prettier",
+    "react-hooks"
+  ],
+  "rules": {
+    "prettier/prettier": "error",
+    "spaced-comment": "warn",
+    "no-process-exit": "off",
+    "consistent-return": "off",
+    "func-names": "off",
+    "no-console": "warn",
+    "object-shorthand": "off",
+    "no-param-reassign": "off",
+    "no-return-await": "off",
+    "no-underscore-dangle": "off",
+    "class-methods-use-this": "off",
+    "no-unused-vars": ["warn", { "argsIgnorePattern": "req|req|next|val|resovle|reject" }],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react-hooks/rules-of-hooks": "error", // Checks rules of Hooks
+    "react-hooks/exhaustive-deps": "warn" // Checks effect dependencies
+  }
+}

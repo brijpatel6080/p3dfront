@@ -1,32 +1,38 @@
-import React from 'react';
-import { Route } from 'react-router-dom';
-import Layout from '../../../Layout/index';
-import Commerce from './Commerce';
-import Finance from './Finance';
-import OnLineMarketingDashboard from '../../../Dashboards/OnLineMarketing/index';
-import AppDashboard from '../../../Dashboards/App/index';
-import BookingDashboard from '../../../Dashboards/Booking/index';
-import FitnessDashboard from '../../../Dashboards/Fitness/index';
-import UI from './UI';
-import Mail from '../../../Mail/index';
-import Chat from '../../../Chat/index';
-import Todo from '../../../Todo/index';
-import Forms from './Forms';
-import Tables from './Tables';
-import Charts from './Charts';
-import Maps from './Maps';
-import Account from './Account';
-import ECommerce from './ECommerce';
-import DefaultPages from './DefaultPages';
-import Documentation from './Documentation';
+import React from 'react'
+import { Route } from 'react-router-dom'
+import Layout from '../../../Layout/index'
+import Commerce from './Commerce'
+import Finance from './Finance'
+import OnLineMarketingDashboard from '../../../Dashboards/OnLineMarketing/index'
+import AppDashboard from '../../../Dashboards/App/index'
+import BookingDashboard from '../../../Dashboards/Booking/index'
+import FitnessDashboard from '../../../Dashboards/Fitness/index'
+import UI from './UI'
+import Mail from '../../../Mail/index'
+import Chat from '../../../Chat/index'
+import Todo from '../../../Todo/index'
+import Forms from './Forms'
+import Tables from './Tables'
+import Charts from './Charts'
+import Maps from './Maps'
+import Account from './Account'
+import ECommerce from './ECommerce'
+import DefaultPages from './DefaultPages'
+import Documentation from './Documentation'
+
+import DoctorsViewList from '../../../../screen/Doctors/DoctorsViewList'
 
 export default () => (
   <div>
     <Layout />
     <div className="container__wrap">
       <Route path="/e_commerce_dashboard" component={Commerce} />
-      <Route path="/online_marketing_dashboard" component={OnLineMarketingDashboard} />
+      <Route
+        path="/online_marketing_dashboard"
+        component={OnLineMarketingDashboard}
+      />
       <Route exact path="/app_dashboard" component={AppDashboard} />
+      <Route exact path="/DoctorsViewList" component={DoctorsViewList} />
       <Route path="/booking_dashboard" component={BookingDashboard} />
       <Route path="/finance_dashboard" component={Finance} />
       <Route path="/fitness_dashboard" component={FitnessDashboard} />
@@ -44,4 +50,4 @@ export default () => (
       <Route path="/documentation" component={Documentation} />
     </div>
   </div>
-);
+)

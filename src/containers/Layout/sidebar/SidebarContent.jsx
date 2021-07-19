@@ -19,7 +19,7 @@ const SidebarContent = ({
           route="/online_marketing_dashboard"
           onClick={hideSidebar}
         />
-         <SidebarLink
+        <SidebarLink
           title="E-commerce Dashboard"
           icon="store"
           route="/e_commerce_dashboard"
@@ -47,9 +47,9 @@ const SidebarContent = ({
           title="Fitness Dashboard"
           icon="heart-pulse"
           route="/fitness_dashboard"
-          onClick={hideSidebar} 
+          onClick={hideSidebar}
         />
-        
+
         <SidebarCategory title="Layout" icon="layers" sidebarCollapse={sidebarCollapse}>
           <button className="sidebar__link" type="button" onClick={changeToLight}>
             <p className="sidebar__link-title">Light Theme</p>
@@ -64,18 +64,18 @@ const SidebarContent = ({
           icon="user"
           onClick={hideSidebar}
         />
-        
+
       </ul> */}
 
       <ul className="sidebar__block">
         <SidebarLink
           title="Dashboard"
           icon="home"
-          route="/online_marketing_dashboard"
+          route="/app_dashboard"
           onClick={hideSidebar}
         />
         <SidebarCategory title="Doctors" icon="users" sidebarCollapse={sidebarCollapse}>
-          <SidebarLink title="View List" />
+          <SidebarLink title="View List" route="/DoctorsViewList" />
           <SidebarLink title="Feedback" />
         </SidebarCategory>
         <SidebarCategory title="Blogs" icon="text-align-justify" sidebarCollapse={sidebarCollapse}>
@@ -217,7 +217,7 @@ const SidebarContent = ({
           </SidebarCategory>
         </SidebarCategory>
       </ul>
-      
+
       <ul className="sidebar__block">
         <SidebarLink
           title="Documentation"

@@ -35,7 +35,7 @@ const OnLineMarketingDashboard = ({ rtl }) => {
         <Appointments />
         <Revenue />
       </Row>
-      {/* <Row>
+      <Row>
         <ABTestingAnalytics dir={rtl.direction} />
         <BounceRateArea dir={rtl.direction} />
         <VisitorsSessions dir={rtl.direction} />
@@ -44,7 +44,7 @@ const OnLineMarketingDashboard = ({ rtl }) => {
         <AudienceByCountry />
         <BestSellingRegions />
         <GoalsCompletion />
-      </Row> */}
+      </Row>
     </Container>
   );
 };

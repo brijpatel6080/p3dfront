@@ -11,7 +11,7 @@ const CreateTableData = () => {
         width: 65,
       },
       {
-        Header: 'First name',
+        Header: 'First name111',
         accessor: 'first',
       },
       {

@@ -18,12 +18,12 @@ const DataReactTable = ({ reactTableData }) => {
   const [rows, setData] = useState(reactTableData.tableRowsData);
   const [isEditable, setIsEditable] = useState(false);
   const [isResizable, setIsResizable] = useState(false);
-  const [isSortable, setIsSortable] = useState(false);
+  const [isSortable, setIsSortable] = useState(true);
   const [isDisabledDragAndDrop, setIsDisabledDragAndDrop] = useState(false);
   const [isDisabledEditable, setIsDisabledEditable] = useState(false);
   const [isDisabledResizable, setIsDisabledResizable] = useState(false);
   const [withDragAndDrop, setWithDragAndDrop] = useState(false);
-  const [withPagination, setWithPaginationTable] = useState(false);
+  const [withPagination, setWithPaginationTable] = useState(true);
   const [withSearchEngine, setWithSearchEngine] = useState(true);
 
   const handleClickIsEditable = () => {

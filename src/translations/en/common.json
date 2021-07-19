@@ -32,7 +32,7 @@
     "recent_orders": "Recent orders"
   },
   "app_dashboard": {
-    "page_title": "App Dashboard",
+    "page_title": "Dashboard - Welcome Admin! ",
     "current_users": "Current Users",
     "active_users": "Active Users",
     "widget_sessions": "Sessions",
@@ -41,7 +41,12 @@
     "widget_pageviews": "Pageviews",
     "app_tile_clicks": "App Tile Clicks",
     "weekly_stat_mobile": "Weekly Stat",
-    "social_marketing_mobile": "Social Marketing"
+    "social_marketing_mobile": "Social Marketing",
+    "Doctors": "Doctors",
+    "Patients": "Patients",
+    "Appointments": "Appointments",
+    "Revenue": "Revenue"
+
   },
   "booking_dashboard": {
     "page_title": "Booking dashboard",
@@ -293,6 +298,9 @@
     },
     "data_table": {
       "title": "Data table"
+    },
+    "doctors_data_table": {
+      "title": "List Of Doctors"
     },
     "dnd_table": {
       "title": "Drag & Drop table"

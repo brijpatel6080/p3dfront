@@ -12,9 +12,14 @@ import PageViewsShort from './components/PageViewsShort';
 import AppTileClicks from './components/AppTileClicks';
 import WeeklyStatMobile from './components/WeeklyStatMobile';
 import SocialMarketing from './components/SocialMarketing';
+import Patients from './components/Patients';
+import Appointments from './components/Appointments';
+import Revenue from './components/Revenue';
+import Doctors from './components/Doctors';
 
 const AppDashboard = ({ rtl }) => {
   const { t } = useTranslation('common');
+
 
   return (
     <Container className="dashboard">
@@ -23,24 +28,32 @@ const AppDashboard = ({ rtl }) => {
           <h3 className="page-title">{t('app_dashboard.page_title')}</h3>
         </Col>
       </Row>
-      <Row>
+      {/* <Row>
         <CurrentUsers />
         <ActiveUsers dir={rtl.direction} />
-      </Row>
-      <Row>
+      </Row> */}
+      {/* <Row>
         <SessionShort />
         <ActiveUsersShort />
         <NewUsersShort />
         <PageViewsShort />
-      </Row>
+      </Row> */}
       <Row>
+        
+        <Doctors />
+        <Patients />
+        <Appointments />
+        <Revenue />
+      </Row>
+      {/* <Row>
         <AppTileClicks dir={rtl.direction} />
         <WeeklyStatMobile />
         <SocialMarketing />
-      </Row>
+      </Row> */}
     </Container>
   );
 };
+
 
 AppDashboard.propTypes = {
   rtl: RTLProps.isRequired,
