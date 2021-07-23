@@ -27,6 +27,12 @@ const HeaderModals = () => {
                Forth child dried in in aware do. You had met they song how feel lain evil near. Small she
                avoid six yet table china. And bed make say been then dine mrs. To household rapturous
                fulfilled attempted on so. "
+              // message={ 
+              //   <>
+              //   <div class="card"><div class="card-body"><div class="card__title"><button type="button" class="addCategory btn btn-primary">View All Categories</button></div><form class="form false"><div class="form__form-group"><span class="form__form-group-label">Name</span><div class="form__form-group-field"><div class="form__form-group-input-wrap "><input name="category" rules="[object Object]" placeholder="Name" value="" /></div></div></div><div role="toolbar" class="form__button-toolbar btn-toolbar"><button type="submit" class="btn btn-primary">Add Category</button><button type="button" class="btn btn-secondary">Cancel</button></div></form></div></div>
+              //   </>
+
+              //  }
             />
             <Modal
               color="success"

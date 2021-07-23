@@ -299,9 +299,33 @@
     "data_table": {
       "title": "Data table"
     },
+
+  
     "doctors_data_table": {
       "title": "List Of Doctors"
     },
+    "feedback_data_table": {
+      "title": "Feedback"
+    },
+
+    "blogs_categories": {
+      "title": "List Of Categories"
+    },
+    "blogs_all": {
+      "title": "List Of Blogs"
+    },
+    "form_add_blog": {
+      "horizontal_form_validate": "Add New Blog"
+    },
+
+    "blogs_add_categories": {
+      "title": "Add Category"
+    },
+    "blogs_add": {
+      "title": "Add Blog"
+    },
+
+
     "dnd_table": {
       "title": "Drag & Drop table"
     },

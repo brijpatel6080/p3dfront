@@ -1,0 +1,12 @@
+.theme-light .sidebar__submenu .sidebar__link:hover {
+    background-color: #53c8b7;
+}
+.theme-light .sidebar__submenu .sidebar__link:hover .sidebar__link-title{
+    color: #fff;
+}
+.theme-light .sidebar__link-active {
+    background: #53c8b7;
+}
+.theme-light .sidebar__link-active .sidebar__link-title{
+    color: #fff;
+}

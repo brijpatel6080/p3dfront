@@ -1,0 +1,32 @@
+.TableProfileImg {
+    border-radius: 50%;
+    width: 50px;
+}
+
+.react-table.resizable-table tbody td {
+    vertical-align: middle;
+}
+
+.btn.view {
+    border: 1px solid #16baec;
+    padding: 5px 6px 2px;
+    background-color: #99cfe0;
+    font-size: 11px;
+}
+
+
+.btn.edit {
+    border: 1px solid #18ec18;
+    padding: 5px 6px 2px;
+    background-color: #d2f8d2;
+    font-size: 11px;
+}
+.btn.delete {
+    border: 1px solid #dd8989;
+    padding: 5px 6px 2px;
+    background-color: #fef3ec;
+    font-size: 11px;
+}
+/* .btn.delete:hover {
+    background-color: red;
+} */

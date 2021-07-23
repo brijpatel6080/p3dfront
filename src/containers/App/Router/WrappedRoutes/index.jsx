@@ -1,4 +1,6 @@
 import React from 'react'
+import '../../../../assets/css/Star.css'
+import '../../../../assets/css/Custom.css'
 import { Route } from 'react-router-dom'
 import Layout from '../../../Layout/index'
 import Commerce from './Commerce'
@@ -21,6 +23,11 @@ import DefaultPages from './DefaultPages'
 import Documentation from './Documentation'
 
 import DoctorsViewList from '../../../../screen/Doctors/DoctorsViewList'
+import Feedback from '../../../../screen/Doctors/Feedback'
+import BlogCategories from '../../../../screen/Blogs/BlogCategories'
+import AddBlogCategories from '../../../../screen/Blogs/AddBlogCategories'
+import AddBlog from '../../../../screen/Blogs/AddBlog'
+import AllBlogs from '../../../../screen/Blogs/AllBlogs/AllBlogs'
 
 export default () => (
   <div>
@@ -31,8 +38,18 @@ export default () => (
         path="/online_marketing_dashboard"
         component={OnLineMarketingDashboard}
       />
+
+      {/* Screen  */}
       <Route exact path="/app_dashboard" component={AppDashboard} />
       <Route exact path="/DoctorsViewList" component={DoctorsViewList} />
+      <Route exact path="/Feedback" component={Feedback} />
+      <Route exact path="/BlogCategories" component={BlogCategories} />
+      <Route exact path="/AddBlogCategories" component={AddBlogCategories} />
+      <Route exact path="/AddBlog" component={AddBlog} />
+      <Route exact path="/AllBlogs" component={AllBlogs} />
+
+
+
       <Route path="/booking_dashboard" component={BookingDashboard} />
       <Route path="/finance_dashboard" component={Finance} />
       <Route path="/fitness_dashboard" component={FitnessDashboard} />

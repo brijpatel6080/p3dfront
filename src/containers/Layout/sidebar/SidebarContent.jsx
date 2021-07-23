@@ -76,13 +76,13 @@ const SidebarContent = ({
         />
         <SidebarCategory title="Doctors" icon="users" sidebarCollapse={sidebarCollapse}>
           <SidebarLink title="View List" route="/DoctorsViewList" />
-          <SidebarLink title="Feedback" />
+          <SidebarLink title="Feedback" route="/Feedback" />
         </SidebarCategory>
         <SidebarCategory title="Blogs" icon="text-align-justify" sidebarCollapse={sidebarCollapse}>
-          <SidebarLink title="Categories" />
-          <SidebarLink title="Add Category" />
-          <SidebarLink title="View Blogs" />
-          <SidebarLink title="Add Blog" />
+          <SidebarLink title="Categories" route="/BlogCategories" />
+          {/* <SidebarLink title="Add Category" route="/AddBlogCategories" /> */}
+          <SidebarLink title="All Blogs" route="/AllBlogs" />
+          {/* <SidebarLink title="Add Blog" route="/AddBlog" /> */}
         </SidebarCategory>
         <SidebarCategory title="Patients" icon="users" sidebarCollapse={sidebarCollapse}>
           <SidebarLink title="View List" />

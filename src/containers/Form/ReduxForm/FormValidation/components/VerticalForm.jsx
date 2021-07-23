@@ -8,6 +8,8 @@ import {
 import EyeIcon from 'mdi-react/EyeIcon';
 import renderSelectField from '@/shared/components/form/Select';
 import validate from './validate';
+import renderMultiSelectField from '@/shared/components/form/MultiSelect';
+
 
 const renderField = ({
   input, placeholder, type, meta: { touched, error },
@@ -111,6 +113,19 @@ const VerticalForm = ({
                   name="select"
                   component={renderSelectField}
                   type="text"
+                  options={[
+                    { value: 'one', label: 'One' },
+                    { value: 'two', label: 'Two' },
+                  ]}
+                />
+              </div>
+            </div>
+            <div className="form__form-group">
+              <span className="form__form-group-label">Multiselect</span>
+              <div className="form__form-group-field">
+                <Field
+                  name="multiSelect"
+                  component={renderMultiSelectField}
                   options={[
                     { value: 'one', label: 'One' },
                     { value: 'two', label: 'Two' },

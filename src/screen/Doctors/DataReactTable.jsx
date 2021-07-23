@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { Card, CardBody, Col } from 'reactstrap'
 import ReactTableBase from '@/shared/components/table/ReactTableBase'
 import ReactTableCustomizer from '@/shared/components/table/components/ReactTableCustomizer'
+import ModalAddDoctor from './Modal/ModalAddDoctor'
 
 const reorder = (rows, startIndex, endIndex) => {
   const result = Array.from(rows)
@@ -51,13 +52,13 @@ const DataReactTable = ({ reactTableData }) => {
     setWithSearchEngine(!withSearchEngine)
   }
 
-  const updateDraggableData = result => {
+  const updateDraggableData = (result) => {
     const items = reorder(rows, result.source.index, result.destination.index)
     setData(items)
   }
 
   const updateEditableData = (rowIndex, columnId, value) => {
-    setData(old =>
+    setData((old) =>
       old.map((item, index) => {
         if (index === rowIndex) {
           return {
@@ -66,7 +67,7 @@ const DataReactTable = ({ reactTableData }) => {
           }
         }
         return item
-      })
+      }),
     )
   }
 
@@ -111,6 +112,20 @@ const DataReactTable = ({ reactTableData }) => {
               fullCustomizer
             />
           </div> */}
+
+          <ModalAddDoctor
+            modalClass="blogAddCate_modal"
+            color="primary"
+            title="Add Doctor"
+            header
+            btn="Add Doctor"
+            // message="Extremely we promotion  "
+            // message={
+            //   <>
+            //   </>
+            //  }
+          />
+
           <ReactTableBase
             key={
               withSearchEngine || isResizable || isEditable
@@ -135,7 +150,7 @@ DataReactTable.propTypes = {
       PropTypes.shape({
         key: PropTypes.string,
         name: PropTypes.string,
-      })
+      }),
     ),
     tableRowsData: PropTypes.arrayOf(PropTypes.shape()),
     defaultTableHeaderData: PropTypes.arrayOf(PropTypes.shape()),

@@ -1,14 +1,19 @@
-import React from 'react';
-import Select from 'react-select';
-import PropTypes from 'prop-types';
+import React from 'react'
+import Select from 'react-select'
+import PropTypes from 'prop-types'
 
 export const MultiSelectField = ({
-  value, name, placeholder, options, onChange, ...other
-                                 }) => {
+  value,
+  name,
+  placeholder,
+  options,
+  onChange,
+  ...other
+}) => {
   const handleChange = (handleChangeValue) => {
-    onChange(handleChangeValue);
-  };
-
+    onChange(handleChangeValue)
+  }
+  console.log('value__11', value)
   return (
     <Select
       isMulti
@@ -22,46 +27,46 @@ export const MultiSelectField = ({
       className="react-select"
       placeholder={placeholder}
       classNamePrefix="react-select"
-      {...other}
+      // {...other}
     />
-  );
-};
+  )
+}
 
 MultiSelectField.propTypes = {
   onChange: PropTypes.func,
   name: PropTypes.string.isRequired,
   placeholder: PropTypes.string,
-  options: PropTypes.arrayOf(PropTypes.shape({
-    value: PropTypes.string,
-    label: PropTypes.string,
-  })),
-  value: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.arrayOf(PropTypes.shape({
+  options: PropTypes.arrayOf(
+    PropTypes.shape({
       value: PropTypes.string,
       label: PropTypes.string,
-    })),
+    }),
+  ),
+  value: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.arrayOf(
+      PropTypes.shape({
+        value: PropTypes.string,
+        label: PropTypes.string,
+      }),
+    ),
   ]).isRequired,
-};
+}
 
 MultiSelectField.defaultProps = {
   placeholder: '',
   onChange: () => {},
   options: [],
-};
+}
 
-const renderMultiSelectField = ({
-  input, meta, options, placeholder,
-}) => (
+const renderMultiSelectField = ({ input, meta, options, placeholder }) => (
   <div className="form__form-group-input-wrap">
-    <MultiSelectField
-      {...input}
-      options={options}
-      placeholder={placeholder}
-    />
-    {meta.touched && meta.error && <span className="form__form-group-error">{meta.error}</span>}
+    <MultiSelectField {...input} options={options} placeholder={placeholder} />
+    {meta.touched && meta.error && (
+      <span className="form__form-group-error">{meta.error}</span>
+    )}
   </div>
-);
+)
 
 renderMultiSelectField.propTypes = {
   input: PropTypes.shape({
@@ -72,17 +77,19 @@ renderMultiSelectField.propTypes = {
     touched: PropTypes.bool,
     error: PropTypes.string,
   }),
-  options: PropTypes.arrayOf(PropTypes.shape({
-    value: PropTypes.string,
-    label: PropTypes.string,
-  })),
+  options: PropTypes.arrayOf(
+    PropTypes.shape({
+      value: PropTypes.string,
+      label: PropTypes.string,
+    }),
+  ),
   placeholder: PropTypes.string,
-};
+}
 
 renderMultiSelectField.defaultProps = {
   meta: null,
   options: [],
   placeholder: '',
-};
+}
 
-export default renderMultiSelectField;
+export default renderMultiSelectField
