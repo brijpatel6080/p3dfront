@@ -1,0 +1,76 @@
+.tab-pane.active {
+  background: white;
+  padding: 40px 30px;
+  min-height: 200px;
+  margin-right: 15px;
+}
+.ViewDoctors .card-body {
+  padding: 0;
+}
+.ViewDoctors .nav-link {
+  cursor: pointer;
+}
+.ViewDoctors .active.nav-link {
+  cursor: default;
+}
+
+.ViewDoctorTable.table--bordered {
+}
+.ViewDoctorTable.table--bordered thead {
+  float: left;
+  width: 40%;
+}
+.ViewDoctorTable.table--bordered tr {
+  width: 100%;
+}
+.ViewDoctorTable.table--bordered thead th {
+  display: block;
+}
+.ViewDoctorTable.table--bordered tbody {
+  float: right;
+  width: 60%;
+}
+.ViewDoctorTable.table--bordered tbody td {
+  display: block;
+}
+
+.ViewDoctorTable.table--bordered thead th:first-child {
+  min-width: auto;
+  width: 380px;
+}
+.ViewDoctorTable.table--bordered thead th {
+  min-width: auto;
+  /* width: 380px; */
+}
+.ViewDoctorTable.table--bordered th:first-child,
+.ViewDoctorTable.table--bordered td:first-child {
+  padding-left: 0px;
+}
+.ulViewDoctor li {
+  list-style: none;
+  padding-left: 15px;
+}
+.ulViewDoctor p.head {
+  float: left;
+  width: 45%;
+}
+.ulViewDoctor .profileImg {
+  width: 45px;
+  height: 45px;
+  border-radius: 50px;
+  box-shadow: 0 0 5px 0 grey;
+}
+.toggleBtn {
+  display: flex;
+}
+.toggleBtn p {
+  width: 100px;
+  padding-top: 15px;
+}
+.toggleBtn .toggle-btn.table__toggle {
+  padding-top: 15px;
+}
+.MuiListItemText-root.image {
+  width: 100px;
+  float: left;
+}

@@ -1,0 +1,122 @@
+.TableProfileImg {
+  border-radius: 50%;
+  width: 50px;
+}
+.allBlogs .TableProfileImg {
+  border-radius: 5%;
+  width: 50px;
+}
+
+.react-table.resizable-table tbody td {
+  vertical-align: middle;
+}
+
+.btn.view {
+  border: 1px solid #16baec;
+  padding: 5px 6px 2px;
+  background-color: #99cfe0;
+  font-size: 11px;
+}
+
+.btn.edit {
+  border: 1px solid #18ec18;
+  padding: 5px 6px 2px;
+  background-color: #d2f8d2;
+  font-size: 11px;
+}
+.btn.delete {
+  border: 1px solid #dd8989;
+  padding: 5px 6px 2px;
+  background-color: #fef3ec;
+  font-size: 11px;
+}
+/* .btn.delete:hover {
+    background-color: red;
+} */
+
+#blog .btn.btn-primary {
+  float: right;
+}
+/* .blogAddCate_modal .modal__footer.btn-toolbar {
+  display: none !important;
+} */
+.modal__body.Category form {
+  display: block;
+}
+
+.rmsc.multi-select {
+  width: 100%;
+  height: 40px;
+  font-size: 12px;
+}
+.dropdown-content {
+  width: 100%;
+  font-size: 12px;
+}
+
+.rmsc.multi-select .dropdown-container {
+  position: relative;
+  outline: 0;
+  border: 1px solid #f2f4f7;
+  background-color: white;
+  border-radius: 0 !important;
+}
+
+.AddblogForm .form__form-group-field {
+  width: 100%;
+  /* display: flex; */
+  display: block;
+}
+
+.EditBlog.modal-dialog--header {
+  max-width: 80%;
+}
+
+.EditBlog .form input,
+.EditBlog .form textarea {
+  border: 1px solid #f2f4f7;
+  color: #646777;
+}
+.EditBlog .form input:focus,
+.EditBlog .form input:active,
+.EditBlog .form textarea:focus,
+.EditBlog .form textarea:active {
+  outline: none;
+  border-color: #4ce1b6;
+}
+.EditBlog .text-editor .DraftEditor-root {
+  border: 1px solid #e8e8e8;
+}
+.EditBlog .text-editor .DraftEditor-root:focus {
+  border: 1px solid #4ce1b6;
+}
+
+.table .resizable-table th:first-child,
+.table .resizable-table td:first-child {
+  max-width: inherit;
+  min-width: 45px !important;
+}
+
+.form__form-group.text-editor .text-editor {
+  width: 100%;
+}
+
+.react-select__menu.css-2613qy-menu {
+  z-index: 111;
+}
+
+
+.editBlog .form__form-group-field {
+  display: block;
+}
+.editBlog .form__form-group-field label{
+  display: flex;
+}
+
+.btn.edit.delete {
+  border: 1px solid #dd8989;
+  padding: 6px 6px 4px;
+}
+.btn.edit.delete p{
+  text-transform: uppercase;
+}
