@@ -1,0 +1,162 @@
+.header.bg{
+    /* background-color: #2b2b4c; */
+    background-color: #fff;
+    box-shadow: 6px 2px 10px 0px #00000014;
+}
+
+.btn.products {
+    border-radius: 20px;
+    padding: 5px 20px;
+    background: #1d72b6;
+    margin-right: 15px;
+    height: 49px;
+    box-shadow: inset 3px 3px 7px 0px #2b2b4c;
+}
+
+.header .page-title {
+    /* color: #fff; */
+    color: #333;
+    font-weight: 700;
+    padding: 15px 30px;
+}
+.navbar-profile{
+    color: #fff;
+    text-decoration: none;
+    background: #dc952c;
+    padding: 10px;
+    border-radius: 50%;
+    font-weight: 600;
+    border: none;
+    width: 50px;
+    height: 50px;
+}
+.slideLink{
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: 600;
+    padding: 10px;
+    padding-left: 15%;
+}
+.slideLink.active{
+    box-shadow: inset 2px 2px 9px 0px #2b2b4c;
+    border-radius: 20px 1px;
+}
+.slideLink:hover{
+    box-shadow: inset 2px 2px 9px 0px #2b2b4c;
+    border-radius: 20px 1px;
+    color: #fff;
+}
+.sideMenu{
+    background-color: #1d72b6;
+    padding-top: 20px;
+    padding-bottom: 120px;
+    box-shadow: inset -5px 5px 3px 0px #2b2b4cad;
+}
+.table.border{
+    box-shadow: 0px 0px 2px 1px grey;
+}
+
+.btn-outline-primary {
+    color: #1d72b6;
+    background-color: transparent;
+    background-image: none;
+    border-color: #1d72b6;
+}
+.btn-outline-primary.active, .btn-outline-primary:hover{
+    color: #fff;
+    background-color: #1d72b6;
+    border-color: #1d72b6;
+}
+
+.btn.btn-sm {
+    padding: .25rem .5rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+}
+
+.inputText {
+    border: 0px;
+    border-bottom: 1px solid #fff;
+    width: 100%;
+    background-color: transparent;
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.formSec{
+    width: 60%;
+    margin: 0 auto;
+}
+.formSec lable{
+    width: 100%;
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.formSec .submitBtn{
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.quBox {
+    border: 1px solid #fff;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 24px 0px;
+}
+
+.closeBtn {
+    background: transparent;
+    color: white;
+    border: none;
+    font-weight: bold;
+    position: relative;
+    bottom: 35px;
+}
+.closeBtn:hover {
+    color: rgb(245, 91, 91);
+}
+
+.width-100 {
+    width: 100% !important;
+}
+
+.navbar-profile .dropdown-content {
+    margin-left: -120px;
+}
+.navbar-profile .dropdown-content a {
+    padding: 10px 20px;
+}
+.navbar-profile .dropdown-content a {
+    border-bottom: 1px solid #80808063;
+}
+
+.daPUhd {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    /* background-image: url(); */
+    background: url(../plus.svg);
+}
+
+.dashboardIcon.footer-brand{
+    width: 80px;
+}
+
+@media (min-width: 768px){
+    .dashboard .sideBar.col-md-2{
+        width: 20%;
+    }
+    .dashboard .col-md-9{
+        width: 80%;
+    }
+}

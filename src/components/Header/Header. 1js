@@ -1,0 +1,99 @@
+import React from "react";
+import { Col, Container, Row } from "reactstrap";
+import logo from "../../assets/img/logo.jpg";
+import FormEmailJs from "../../screen/home/FormEmailJs";
+import ModalBox from "../Modal/ModalBox";
+// import Popup from "reactjs-popup";
+const Header = () => {
+  return (
+    <>
+      <nav className="navbar navbar-expand-lg navbar-light bg-white mt-30">
+        <Container className="ml-160 mr-160">
+          <Row>
+            <Col md={2}>
+              <a className="navbar-brand">
+                <img src={logo} className="navbar-brand-img" alt="..." />
+              </a>
+            </Col>
+
+            <Col md={10}>
+              <div className="collapse navbar-collapse" id="navbarCollapse">
+                <ul className="navbar-nav ms-auto">
+                  <li className="nav-item dropdown">
+                    <a
+                      className="nav-link dropdown-toggle"
+                      id="navbarLandings"
+                      data-bs-toggle="dropdown"
+                      href="#"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      Landings
+                    </a>
+                  </li>
+                  <li className="nav-item dropdown">
+                    <a
+                      className="nav-link dropdown-toggle"
+                      id="navbarPages"
+                      data-bs-toggle="dropdown"
+                      href="#"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      Pages
+                    </a>
+                  </li>
+                  <li className="nav-item dropdown">
+                    <a
+                      className="nav-link dropdown-toggle"
+                      id="navbarAccount"
+                      data-bs-toggle="dropdown"
+                      href="#"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      Account
+                    </a>
+                    {/* <ul
+                      className="dropdown-menu"
+                      aria-labelledby="navbarAccount"
+                    >
+                      <li className="dropdown-item dropend">
+                        <a
+                          className="dropdown-item"
+                          data-bs-toggle="modal"
+                          href="#getInTouch"
+                        >
+                          Get in Touch
+                        </a>
+                      </li>
+                    </ul> */}
+                  </li>
+                  <li className="nav-item dropdown">
+                    <a
+                      className="nav-link dropdown-toggle"
+                      id="navbarDocumentation"
+                      data-bs-toggle="dropdown"
+                      href="#"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      Documentation
+                    </a>
+                  </li>
+                  <li className="nav-item dropdown ml-auto">
+                    <button className="btn btn-primary lift" >
+                      Sign In
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </nav>
+    </>
+  );
+};
+
+export default Header;
