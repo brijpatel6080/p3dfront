@@ -360,7 +360,13 @@ select.hs-input {
   font-weight: 500;
 }
 .btn-outline-secondary {
-  padding: 8px 40px;
+  padding: 12px 20px;
+  border: 1px solid #335eea;
+  color: #335eea;
+}
+.btn-outline-secondary:hover {
+  background-color: #335eea;
+  color: #fff;
 }
 
 /* Welcome  */
@@ -668,7 +674,8 @@ h6.text-uppercase,
 }
 
 .form__form-group-field.password input {
-  width: 93.5%;
+  /* width: 93.5%; */
+  width: 100%;
   float: left;
 }
 .form__form-group-field.password button {

@@ -72,6 +72,7 @@ const renderField = ({
 // //   }
 
 const RequestDemoReduxForm = (props) => {
+
   const url = "";
 
   const [isRegister, setIsRegister] = useState(true);
@@ -94,6 +95,8 @@ const RequestDemoReduxForm = (props) => {
     init("user_usnPurn5Q12tZZp2vhAJM");
   });
   const { handleSubmit, pristine, reset, submitting, onSubmitPress } = props;
+
+  
   const sendMail = (data) => {
     console.log("____data", data);
 
@@ -137,7 +140,8 @@ const RequestDemoReduxForm = (props) => {
       Industrytype: industryType,
     };
     // onSubmitPress();
-    fetch("http://54.169.56.66:7000/employee/add", {
+    // http://54.169.56.66:7000/employee/add 
+    fetch("http://13.229.201.66:7000/employee/add", {
       method: "post",
       body: JSON.stringify(dataIs),
       headers: {
@@ -151,10 +155,12 @@ const RequestDemoReduxForm = (props) => {
           // alert("validation")
 
           // const ValidForm =()=> response.msg;
-          setFormValid(response.msg);
+          setFormValid(response.msg);  
         } else {
-          setIsRegister(false);
+          alert("Registration Successfully");
+          setIsRegister(false);  // after registration redirect to login modal
           setemailid(email);
+          onSubmitPress(); // for close modal
         }
         // console.log("response", JSON.stringify(response));
         // if(JSON.stringify(response) == "succesfully add"){
@@ -180,7 +186,7 @@ const RequestDemoReduxForm = (props) => {
       Email: emailid,
       Password: password,
     });
-    fetch("http://54.169.56.66:7000/login", {
+    fetch("http://13.229.201.66:7000/login", {
       method: "post",
       headers: {
         "content-type": "application/json",
@@ -197,7 +203,7 @@ const RequestDemoReduxForm = (props) => {
           // setIsRegister(false);
           // window.location = '/Dashboard'
           alert("Login Successfully");
-          onSubmitPress();
+          onSubmitPress(); // for close modal
         } else {
           alert(response.msg);
         }
@@ -209,8 +215,12 @@ const RequestDemoReduxForm = (props) => {
       });
   };
   if (!isRegister) {
+
+    
     return (
       // <form onSubmit={handleSubmit(sendMail)}>
+
+
       <form onSubmit={login}>
         <Container className="requestForm">
           <Row>
@@ -285,7 +295,11 @@ const RequestDemoReduxForm = (props) => {
           </Row>
         </Container>
       </form>
+    
+    
     );
+
+    
   } else {
     return (
           // Request a Demo Form (Modal Box)
@@ -417,7 +431,7 @@ const RequestDemoReduxForm = (props) => {
                 Submit
               </button>
               <button
-                className="btn btn-outline-secondary border clear"
+                className="btn btn-outline-secondary border1 clear"
                 type="button"
                 disabled={pristine || submitting}
                 onClick={reset}

@@ -4,6 +4,7 @@ import ModalBox from "../../../components/Modal/ModalBox";
 import RequestDemoReduxForm from "../reduxForm/RequestDemoReduxForm";
 import video from "../../../assets/video/video-1.mp4";
 const HowWorks = () => {
+
   return (
     <>
       <section class="pt-5 pt-md-7 hw">

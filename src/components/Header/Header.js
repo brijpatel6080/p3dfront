@@ -96,7 +96,7 @@ const Header = () => {
                 <ModalBoxPri
                   btn="Sign in"
                   // title="Sign In"
-                  content={<SignIn />}
+                  content={<SignIn  />}
                   modalClass="ml-auto singIn"
                 />
               </Navbar.Items>
