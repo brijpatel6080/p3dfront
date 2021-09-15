@@ -103,7 +103,7 @@ const HowWorks = () => {
               <h2 className="">
                 Support
                 <br />
-                <span class="text-primary"></span>.
+                <span class="text-primary"></span>
               </h2>
 
               <p class="fs-lg text-gray-700 mb-6">

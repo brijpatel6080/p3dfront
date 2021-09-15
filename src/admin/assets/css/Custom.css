@@ -1,0 +1,123 @@
+.mainLogo {
+    width: 100px;
+}
+
+
+/* .btn-primary {
+    background-color: #1d73bb;
+    border-color: #1d73bb;
+}
+.btn-outline-primary {
+    color: #1d73bb;
+    border-color: #1d73bb;
+}
+.btn-outline-primary:hover {
+    background-color: #1d73bb;
+    border-color: #1d73bb;
+}
+.btn-primary:hover {
+    color: #1d73bb;
+    background-color: #fff;
+    border-color: #1d73bb;
+} */
+
+.c-sidebar.c-sidebar-fixed {
+    /* z-index: 1030; */
+    z-index: 1000;
+}
+
+
+/* Project Form Modal Box Start 
+=====================================================  */
+
+@media (min-width: 576px){
+    .projectFormModal  .modal-dialog {
+        max-width: none;
+        /* margin: 1.75rem auto; */
+        margin: auto;
+    }
+}
+
+.projectFormModal.modal-primary .modal-header {
+    background-color: #1d73bb;
+}
+
+.projectFormModal .modal-header .close {
+    position: absolute;
+}
+.projectFormModal .modal-title {
+    margin: auto;
+}
+
+.formSec{
+    width: 60%;
+    margin: 0 auto;
+}
+.formSec lable{
+    width: 100%;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.formSec .submitBtn{
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.inputText {
+    border: 0px;
+    /* border-bottom: 2px solid #333; */
+    width: 100%;
+    background-color: transparent;
+    font-size: 30px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+    box-shadow: 0px 3px 1px 0px #0000005c;
+}
+
+.sc-bdfBQB.cuKchZ{
+    background: rgb(29 115 187) !important;
+}
+.width-100{
+    width: 100% !important;
+}
+
+.UploadImgText{
+    position: relative;
+    top: -66px;
+    z-index: 111;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+}
+/* Project Form Modal Box End  */
+
+
+
+.c-header-nav .dropdown {
+    position: relative;
+    background: #3399ff;
+    border-radius: 50%;
+    width: 55px;
+    height: 40px;
+    color: #fff;
+    margin: 0 !important;
+}
+
+.dropdown-menu.show {
+    position: fixed !important;
+}
+
+.c-sidebar .c-sidebar-nav-link:hover, .c-sidebar .c-sidebar-nav-dropdown-toggle:hover {
+    color: #fff;
+    background: #3399ff;
+}
+
+.c-sidebar .c-sidebar-nav-link.c-active, .c-sidebar .c-active.c-sidebar-nav-dropdown-toggle {
+    color: #fff;
+    background: #3399ff;
+}

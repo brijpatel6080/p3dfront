@@ -10,12 +10,12 @@ const Brands = () => {
           <div className="row justify-content-center">
             <div className="col-12 col-md-10 col-lg-10 text-center">
               <h1 className="font-italic display-8 text-white text-1 mb-30">
-                "if you can book a plane ticket online, you can use our
+                "If you can book a plane ticket online, you can use our
                 Artificial Intelligence Engine."
               </h1>
               <h3 className="text-white">
-                You simply upload your Autodesk 2D or 3D BIM file and download
-                your construction schedule and cost estimate
+                Simply upload your Autodesk 2D or 3D BIM file and download
+                your construction schedule and cost estimate.
               </h3>
             </div>
           </div>

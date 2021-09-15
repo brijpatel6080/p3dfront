@@ -141,7 +141,7 @@ const RequestDemoReduxForm = (props) => {
     };
     // onSubmitPress();
     // http://54.169.56.66:7000/employee/add 
-    fetch("http://13.229.201.66:7000/employee/add", {
+    fetch("http://54.254.121.46:7000/employee/add", {
       method: "post",
       body: JSON.stringify(dataIs),
       headers: {
@@ -214,93 +214,95 @@ const RequestDemoReduxForm = (props) => {
         console.log("response err", err);
       });
   };
-  if (!isRegister) {
+  // if (!isRegister) 
+  // {
 
     
-    return (
-      // <form onSubmit={handleSubmit(sendMail)}>
+  //   return (
+  //     // <form onSubmit={handleSubmit(sendMail)}>
 
 
-      <form onSubmit={login}>
-        <Container className="requestForm">
-          <Row>
-            <Col>{/* <h5 className="formValid">{FormValid}</h5>{" "} */}</Col>
-          </Row>
-          <Row>
-            <Col className="pb-15" md={12}>
-              {/* <Field
-                name="email"
-                type="email"
-                component={renderField}
-                label="Email*"
-                validate={(email, required)}
-                warn={aol}
-                input={{ disabled: true }}
-              /> */}
-              <Label>Email*</Label>
-              <input className="" type="email" value={emailid} disabled />
-            </Col>
-            <Col className="pb-15" md={12}>
-              <div className="form__form-group-field password">
-                <Label>Password*</Label>
-                <input
-                  className=""
-                  type="password"
-                  value={password}
-                  onChange={(event) => {
-                    setpassword(event.target.value);
-                  }}
-                />
-                {/* password */}
-                {/* <Field
-                  name="password"
-                  type="password"
-                  label="Password*"
-                  component={renderField}
-                  type={isPasswordShown ? "text" : "password"}
-                  placeholder="Password"
-                /> */}
-                {/* <button
-                  type="button"
-                  className={`form__form-group-button${
-                    isPasswordShown ? " active" : ""
-                  }`}
-                  tabIndex="-1"
-                  onClick={() => showPassword()}
-                >
-                  <FaEye />
-                </button> */}
-              </div>
-            </Col>
+  //     <form onSubmit={login}>
+  //       <Container className="requestForm">
+  //         <Row>
+  //           <Col>{/* <h5 className="formValid">{FormValid}</h5>{" "} */}</Col>
+  //         </Row>
+  //         <Row>
+  //           <Col className="pb-15" md={12}>
+  //             {/* <Field
+  //               name="email"
+  //               type="email"
+  //               component={renderField}
+  //               label="Email*"
+  //               validate={(email, required)}
+  //               warn={aol}
+  //               input={{ disabled: true }}
+  //             /> */}
+  //             <Label>Email*</Label>
+  //             <input className="" type="email" value={emailid} disabled />
+  //           </Col>
+  //           <Col className="pb-15" md={12}>
+  //             <div className="form__form-group-field password">
+  //               <Label>Password*</Label>
+  //               <input
+  //                 className=""
+  //                 type="password"
+  //                 value={password}
+  //                 onChange={(event) => {
+  //                   setpassword(event.target.value);
+  //                 }}
+  //               />
+  //               {/* password */}
+  //               {/* <Field
+  //                 name="password"
+  //                 type="password"
+  //                 label="Password*"
+  //                 component={renderField}
+  //                 type={isPasswordShown ? "text" : "password"}
+  //                 placeholder="Password"
+  //               /> */}
+  //               {/* <button
+  //                 type="button"
+  //                 className={`form__form-group-button${
+  //                   isPasswordShown ? " active" : ""
+  //                 }`}
+  //                 tabIndex="-1"
+  //                 onClick={() => showPassword()}
+  //               >
+  //                 <FaEye />
+  //               </button> */}
+  //             </div>
+  //           </Col>
 
-            <Col className="pb-15 pt-20 text-center" md={12}>
-              <button
-                className="btn btn-primary pl-40 pr-40 mr-15"
-                // type="submit"
-                type="button"
-                disabled={submitting}
-                onClick={login}
-              >
-                Submit
-              </button>
-              <button
-                className="btn btn-outline-secondary"
-                type="button"
-                disabled={pristine || submitting}
-                onClick={reset}
-              >
-                Clear Values
-              </button>
-            </Col>
-          </Row>
-        </Container>
-      </form>
+  //           <Col className="pb-15 pt-20 text-center" md={12}>
+  //             <button
+  //               className="btn btn-primary pl-40 pr-40 mr-15"
+  //               // type="submit"
+  //               type="button"
+  //               disabled={submitting}
+  //               onClick={login}
+  //             >
+  //               Submit
+  //             </button>
+  //             <button
+  //               className="btn btn-outline-secondary"
+  //               type="button"
+  //               disabled={pristine || submitting}
+  //               onClick={reset}
+  //             >
+  //               Clear Values
+  //             </button>
+  //           </Col>
+  //         </Row>
+  //       </Container>
+  //     </form>
     
     
-    );
+  //   );
 
     
-  } else {
+  // } 
+  // else {
     return (
           // Request a Demo Form (Modal Box)
 
@@ -443,7 +445,7 @@ const RequestDemoReduxForm = (props) => {
         </Container>
       </form>
     );
-  }
+  // }
 };
 
 const Other = (props) => {

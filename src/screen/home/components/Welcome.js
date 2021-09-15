@@ -33,13 +33,13 @@ const Welcome = () => {
               </h1>
               <p className="lead text-center text-md-start text-muted mb-6 mb-lg-8 mb-40">
                 Upload your Construction plans or BIM files and get your
-                complete construction schedule and take-off estimate in seconds
+                complete construction schedule and take-off estimate in minutes
               </p>
               <div className="text-center">
                 <a
                   className="btn btn-primary lift"
                 >
-                  Learn more
+                  Request a demo
                 </a>
               </div>
             </div>
@@ -78,7 +78,6 @@ const Welcome = () => {
                   height="24"
                   viewBox="0 0 24 24"
                   xmlns="assets/img/illustrations/svg-1.svg"
-                 
                 >
                   <g fill="none" fill-rule="evenodd">
                     <path d="M0 0h24v24H0z" />

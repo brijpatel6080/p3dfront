@@ -81,7 +81,7 @@ const Cards = (props) => {
       <div className="col-12 col-md-4 cards mb-xs-30" data-aos="fade-up">
         <img src={image} />
         <div className="icon11 text-primary mb-10">
-          <h3>{title}</h3>
+          <h3 className="cardTitle">{title}</h3>
         </div>
         <p className="text-muted mb-6 mb-md-0 pr-20">{detail}</p>
       </div>

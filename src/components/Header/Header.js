@@ -26,15 +26,15 @@ const Header = () => {
   }, []);
 
   return (
-    <Styles.Wrapper className="pl-xs-0 pr-xs-0  pt-40">
+    <Styles.Wrapper className="pl-xs-0 pr-xs-0  pt-0">
       {/* <CSSReset /> */}
 
-      <Navbar.Wrapper>
-        <Container>
+      <Navbar.Wrapper className="pt-0 ">
+        <Container fluid={true}>
           <Row>
             {/* logo */}
-            <Col md={2} sm={2}>
-            <Link to="/Home" className="navbar-brand float-l">
+            <Col md={1} sm={3}>
+              <Link to="/Home" className="navbar-brand float-l pt-0">
                 <img src={logo} className="navbar-brand-img" alt="..." />
               </Link>
               <HamburgerButton.Wrapper
@@ -45,7 +45,7 @@ const Header = () => {
               </HamburgerButton.Wrapper>
             </Col>
             {/* Navigation */}
-            <Col md={10} sm={9}>
+            <Col md={11} sm={9}>
               <Navbar.Items ref={drawerRef} openDrawer={openDrawer}>
                 {openDrawer == true && (
                   <a
@@ -147,6 +147,7 @@ const Navbar = {
     display: flex;
     list-style: none;
     padding-left: 0px;
+    padding-top: 20px;
 
     @media only screen and (max-width: 900px) {
       position: fixed;
@@ -170,7 +171,8 @@ const Navbar = {
     padding: 10px 1.5rem;
     cursor: pointer;
     color: #506690;
-    font-weight: 600;
+    font-weight: 700;
+    font-size: 20px;
     @media only screen and (max-width: 900px) {
       padding: 1rem 0;
     }

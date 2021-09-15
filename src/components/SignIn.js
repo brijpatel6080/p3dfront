@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import bg from "../assets/img/photos/photo-1.jpg";
 import { useHistory, Redirect } from "react-router-dom";
 
@@ -8,8 +8,8 @@ import { Col, Container, Label, Row } from "reactstrap";
 const SignIn = (props) => {
   const [emailid, setemailid] = useState("");
   const [password, setpassword] = useState("");
- 
-  const {  pristine, reset, submitting, onSubmitPress } = props;
+
+  const { pristine, reset, submitting, onSubmitPress } = props;
 
   let history = useHistory();
   // console.log("history=", history);
@@ -24,13 +24,18 @@ const SignIn = (props) => {
     setemailid(emailid);
   };
 
+  const LoginStorage = () => {
+    localStorage.setItem("user", 1);
+    // history.push("/admin/");
+    alert("Login Successfully");
+  };
 
   const login = () => {
     console.log("request", {
       Email: emailid,
       Password: password,
     });
-    fetch("http://13.229.201.66:7000/login", {
+    fetch("http://54.254.121.46:7000/employee/login", {
       method: "post",
       headers: {
         "content-type": "application/json",
@@ -47,7 +52,13 @@ const SignIn = (props) => {
           // setIsRegister(false);
 
           alert("Login Successfully");
-          history.push('/admin/');
+
+          if (response.data.accessToken) {
+            localStorage.setItem("user", JSON.stringify(response.data));
+          }
+          // return response.data;
+
+          history.push("/admin/");
           // <Redirect  to="/admin/" />
           onSubmitPress(); // for close modal
         } else {
@@ -104,7 +115,7 @@ const SignIn = (props) => {
                 </p>
                 {/* onSubmit={handleSubmit(login)} */}
 
-                <form onSubmit={login}>
+                <form onSubmit={LoginStorage}>
                   <Container className="requestForm">
                     <Row>
                       <Col>
@@ -130,7 +141,7 @@ const SignIn = (props) => {
                           value={emailid}
                           // disabled
                           onChange={onChangeEmail}
-                        
+                          required
                         />
                       </Col>
                       <Col className="pb-15" md={12}>
@@ -143,6 +154,7 @@ const SignIn = (props) => {
                             onChange={(event) => {
                               setpassword(event.target.value);
                             }}
+                            required
                           />
                           {/* password */}
                           {/* <Field
